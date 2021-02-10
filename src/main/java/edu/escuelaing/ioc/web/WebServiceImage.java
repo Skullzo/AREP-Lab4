@@ -14,6 +14,7 @@ public class WebServiceImage {
      */
     @Web("/image.html")
     public static String showImage() {
-        return "<html><body><h1>Imagennnn</h1><img src=\"/java.png\"></body></html>";
+        return "<html><body><h1>Imagennnn</h1><body style = \"background: url(https://blog.redbus.co/wp-content/uploads/2019/08/Bandera-precidencial-1.jpg) no-repeat ; background-size: 100% 111%;\">\n"
+        		+ "</body></body></html>";
     }
 }
