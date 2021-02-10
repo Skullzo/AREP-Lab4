@@ -1,6 +1,8 @@
 # Taller de Arquitecturas de Servidores de Aplicaciones, Meta protocolos de objetos, Patrón IoC, Reflexión
 ## Descripción
 En el **Taller de Arquitecturas de Servidores de Aplicaciones, Meta protocolos de objetos, Patrón IoC, Reflexión** se realizarán diferentes retos en los que se explorarán los conceptos de esquemas de nombres y de clientes y servicios. Adicionalmente, el taller también explorará la arquitectura de las aplicaciones distribuidas sobre internet, para así ver el funcionamiento detallado de una aplicación web capaz de recibir múltiples solicitudes no concurrentes, creando un framework manualmente muy similar al funcionamiento de Spark que le permite publicar servicios web ```get``` y ```post``` para poder acceder a recursos estáticos como páginas web, javascripts, imágenes CSSs, entre otras cosas, desplegado usando un servidor web llamado Heroku para poder acceder a ella de manera totalmente remota. Para verificar el funcionamiento de cada uno de los requisitos, se realizó una simulación de la página de la Registraduría Nacional del Estado Civil, en la cual el usuario tiene una interfaz, y al digitar la URL en la que se encuentran las bases de datos, puede observar características como nombres y apellidos de ciudadanos junto con su dirección, cada una de ellas almacenada en una base de datos.
+
+----------*Cambiar Descripción*----------
 ## Prerrequisitos
 Para la realización y ejecución tanto del programa como de las pruebas de este, se requieren ser instalados los siguientes programas:
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
@@ -19,7 +21,7 @@ java -version
 Para descargar el proyecto de GitHub, primero debemos clonar este repositorio, ejecutando la siguiente línea de comando en GIT.
 
 ```
-git clone https://github.com/Skullzo/AREP-Lab3.git
+git clone https://github.com/Skullzo/AREP-Lab4.git
 ```
 
 ## Ejecución
@@ -38,6 +40,8 @@ mvn test
 Luego de haber ejecutado el comando ```mvn test``` en un Shell o Símbolo del Sistema, debe aparecer la siguiente imagen, demostrando que las pruebas han sido realizadas exitosamente.
 
 ![img](https://github.com/Skullzo/AREP-Lab3/blob/main/img/Pruebas.PNG)
+
+----------*Cambiar Imagen de Pruebas*----------
 
 ## Desplegar en Heroku
 Para desplegar el programa en Heroku, se debe realizar clic en el siguiente botón de Heroku para desplegar automáticamente la aplicación directamente desde Heroku. 
