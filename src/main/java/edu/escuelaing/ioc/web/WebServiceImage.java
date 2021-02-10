@@ -14,6 +14,6 @@ public class WebServiceImage {
      */
     @Web("/image.html")
     public static String showImage() {
-        return "<html><body><h1>Image</h1><img src=\"/lol.png\"></body></html>";
+        return "<html><body><h1>Imagennnn</h1><img src=\"/java.png\"></body></html>";
     }
 }
