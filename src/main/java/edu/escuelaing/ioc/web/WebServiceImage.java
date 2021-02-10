@@ -14,12 +14,6 @@ public class WebServiceImage {
      */
     @Web("/image.html")
     public static String showImage() {
-        return "HTTP/1.1 200 OK \\r\\n\" + \"Content-Type: image/png \\r\\n\" + \"\\r\\n";
+        return "<html><body><h1>Image</h1><img src=\"/lol.png\"></body></html>";
     }
 }
-//BufferedImage image = ImageIO.read(file);
-//ByteArrayOutputStream ArrBytes = new ByteArrayOutputStream();
-//DataOutputStream writeimg = new DataOutputStream(outClient);
-//ImageIO.write(image, "PNG", ArrBytes);
-//writeimg.writeBytes("HTTP/1.1 200 OK \r\n" + "Content-Type: image/png \r\n" + "\r\n");
-//writeimg.write(ArrBytes.toByteArray());
