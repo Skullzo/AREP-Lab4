@@ -7,7 +7,7 @@ public class WebServiceHTML {
      *
      * @return html hello page
      */
-    @Web("/hello.html")
+    @Web("/home.html")
     public static String sayHello() {
         return "<html><body><h1>Hello world!</h1></body></html>";
     }
