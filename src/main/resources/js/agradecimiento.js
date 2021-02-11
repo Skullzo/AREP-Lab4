@@ -1,1 +1,1 @@
-alert("Muchas gracias por visitar nuestra pagina! Aqui te dejamos otro espectacular fondo de pantalla, que lo disfrutes!");
+alert("Muchas gracias por visitar nuestra pagina web! Aqui te dejamos otro espectacular fondo de pantalla, que lo disfrutes!");
