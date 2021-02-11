@@ -17,13 +17,12 @@ public class WebLoader {
      * Loads the classes from the 'edu.escuelaing.arep.web' package
      */
     public void init() {
-        String webPackage = "edu.escuelaing.ioc.web";
+        String webPackage = "edu.escuelaing.arep.app.web";
         Reflections reflections = new Reflections(webPackage, new SubTypesScanner(false));
         Set<Class<? extends Object>> allClasses = reflections.getSubTypesOf(Object.class);
         for (Class cls : allClasses) {
             for (Method method : cls.getDeclaredMethods()) {
                 if (method.isAnnotationPresent(Web.class)) {
-                    //System.out.println(method.getAnnotation(Web.class).value());
                     urlMethod.put(method.getAnnotation(Web.class).value(), method);
                 }
             }
