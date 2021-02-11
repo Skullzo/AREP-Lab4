@@ -39,7 +39,7 @@ mvn test
 
 Luego de haber ejecutado el comando ```mvn test``` en un Shell o Símbolo del Sistema, debe aparecer la siguiente imagen, demostrando que las pruebas han sido realizadas exitosamente.
 
-![img](https://github.com/Skullzo/AREP-Lab3/blob/main/img/Pruebas.PNG)
+![img](https://github.com/Skullzo/AREP-Lab4/blob/main/img/Pruebas.PNG)
 
 ----------*Cambiar Imagen de Pruebas*----------
 
