@@ -4,15 +4,20 @@ import java.io.*;
 import java.net.*;
 import java.util.regex.*;
 import org.apache.commons.io.FilenameUtils;
-
+/**
+ * Clase principal encargada de llevar a cabo la ejecucion de todo el programa.
+ * @author  Alejandro Toro Daza
+ * @version 1.0.  (11 de Febrero del 2021) 
+ */
 public class App {
-  
     private ServerSocket serverSocket;
     private Socket clientSocket;
     private PrintWriter out;
     private BufferedReader in;
     private WebLoader webLoader;
-
+    /**
+     * Metodo constructor de la clase App que se encarga de manejar el Socket del servidor.
+     */
     public App() {
         int port = getPort();
         webLoader = new WebLoader();
@@ -26,11 +31,9 @@ public class App {
         out = null;
         in = null;
     }
-
     /**
-     * Starts the server, begins to listen to connections and loads methods that use the @Web annotation
-     *
-     * @throws IOException
+     * Metodo que se encarga de iniciar el servidor, comienza a escuchar conexiones y carga metodos que usan la anotación @Web.
+     * @throws IOException Excepcion que se lanza si no se escucha ningun tipo de conexion.
      */
     public void start() throws IOException {
         webLoader.init();
@@ -70,18 +73,15 @@ public class App {
                     break;
                 }
             }
-
             out.close();
             in.close();
             clientSocket.close();
         }
     }
-
     /**
-     * Handles how to send back a requested resource
-     *
-     * @param fileRequested
-     * @throws IOException
+     * Metodo que se encarga de manejar como devolver un recurso solicitado.
+     * @param fileRequested Parametro que se encarga de obtener el archivo requerido por el usuario.
+     * @throws IOException Excepcion que se lanza si no se encuentra el archivo requerido por el usuario.
      */
     private void handleRequest(String fileRequested) throws IOException {
         String filePath = "src/main/resources/";
@@ -132,14 +132,12 @@ public class App {
             out.println("HTTP/1.1 404\r\nAccess-Control-Allow-Origin: *\r\n\r\n<html><body><h1>404 NOT FOUND (" + fileRequested + ")</h1></body></html>");
         }
     }
-
     /**
-     * Generates a header for the browser
-     *
-     * @param isImage tells if the requested resource is an image
-     * @param ext     the extension of the resource
-     * @param length  the length of the resource
-     * @return the header
+     * Metodo encargado de obtener el encabezado HTTP de la pagina web.
+     * @param isImage Parametro que verifica si el recurso solicitado es una imagen.
+     * @param ext Parametro que tiene la extensión del recurso.
+     * @param length Parametro que tiene la longitud del recurso.
+     * @return Retorna el encabezado de la pagina web.
      */
     private String generateHeader(boolean isImage, String ext, long length) {
         String header = null;
@@ -150,27 +148,20 @@ public class App {
         }
         return header;
     }
-
-
     /**
-     * This method reads the default port as specified by the PORT variable in
-     * the environment.
-     *
-     * @return The port variable if set, else 4567 as default
+     * Este metodo lee el puerto predeterminado segun lo especificado por la variable PORT en el entorno.
+     * @return returns Retorna el puerto predeterminado si el heroku-port no esta configurado (es decir, en localhost).
      */
     private static int getPort() {
         if (System.getenv("PORT") != null) {
             return Integer.parseInt(System.getenv("PORT"));
         }
-        return 4567; //returns default port if heroku-port isn't set (i.e. on localhost)
+        return 4567;
     }
-
-
     /**
-     * Main method that starts the HTTP Web Server
-     *
-     * @param args
-     * @throws IOException
+     * Metodo principal main que se encarga del funcionamiento de toda la clase App.
+     * @param args Parametro que indica la lista de los elementos a evaluar.
+     * @throws IOException Excepcion que se lanza si ocurre algun error en la ejecucion del programa.
      */
     public static void main(String[] args) throws IOException {
         new App().start();

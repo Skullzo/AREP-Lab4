@@ -5,16 +5,21 @@ import java.lang.reflect.Method;
 import java.util.*;
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
-
+/**
+ * Clase que se encarga de cargar la pagina web utilizando cada una de las anotaciones con sus respectivos recursos disponibles (3 implementados)..
+ * @author  Alejandro Toro Daza
+ * @version 1.0.  (11 de Febrero del 2021) 
+ */
 public class WebLoader {
-    
+	/**
+	 * Metodo constructor de la clase WebLoader que se encarga de almacenar en la variable urlMethod un HashMap.
+	 */
     private Map<String, Method> urlMethod;
     public WebLoader() {
         urlMethod = new HashMap<>();
     }
-
     /**
-     * Loads the classes from the 'edu.escuelaing.arep.web' package
+     * Metodo encargado de cargar las clases del paquete 'edu.escuelaing.arep.web'.
      */
     public void init() {
         String webPackage = "edu.escuelaing.arep.app.web";
@@ -28,22 +33,18 @@ public class WebLoader {
             }
         }
     }
-
     /**
-     * Tells if a resource is present
-     *
-     * @param resource The requested resource
-     * @return True if present, otherwise false
+     * Metodo que se encarga de realizar la validacion si el recurso esta presente.
+     * @param resource Parametro que representa el recurso requerido por el usuario.
+     * @return Retorna True si esta presente el recurso, Falso d.l.c.
      */
     public boolean isResourcePresent(String resource) {
         return urlMethod.containsKey(resource);
     }
-
     /**
-     * Gets the requested resource
-     *
-     * @param resource The requested resource
-     * @return The requested resource
+     * Metodo que se encarga de cargar el recurso requerido por el usuario.
+     * @param resource Parametro que representa el recurso requerido por el usuario.
+     * @return Retorna el recurso requerido por el usuario.
      */
     public String getResource(String resource) {
         String res = null;

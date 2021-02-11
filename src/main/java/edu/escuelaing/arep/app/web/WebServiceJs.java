@@ -1,11 +1,14 @@
 package edu.escuelaing.arep.app.web;
 import edu.escuelaing.arep.app.anotaciones.Web;
-
+/**
+ * Clase que se encarga de realizar la respectiva ejecucion y despliegue del fondo de pantalla y el js en formato HTML.
+ * @author  Alejandro Toro Daza
+ * @version 1.0.  (11 de Febrero del 2021) 
+ */
 public class WebServiceJs {
-     /**
-     * Shows a html with a js file
-     *
-     * @return html requesting a js
+	/**
+     * Metodo que se encarga de ejecutar la anotacion @Web y retornar el contenido de la pagina HTML en el recurso /agradecimiento.html.
+     * @return Retorna un fondo de pantalla y el js en formato HTML.
      */
     @Web("/agradecimiento.html")
     public static String returnHtmlWithJS(){

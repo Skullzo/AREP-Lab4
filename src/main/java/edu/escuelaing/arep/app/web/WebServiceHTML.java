@@ -1,11 +1,14 @@
 package edu.escuelaing.arep.app.web;
 import edu.escuelaing.arep.app.anotaciones.Web;
-
+/**
+ * Clase que se encarga de realizar la respectiva ejecucion y despliegue de la interfaz principal de usuario en formato HTML.
+ * @author  Alejandro Toro Daza
+ * @version 1.0.  (11 de Febrero del 2021) 
+ */
 public class WebServiceHTML {
      /**
-     * Says hello in a html page
-     *
-     * @return html hello page
+     * Metodo que se encarga de ejecutar la anotacion @Web y retornar el contenido de la pagina HTML en el recurso /home.html.
+     * @return Retorna la pagina con un mensaje de bienvenida y un fondo de pantalla en formato HTML.
      */
     @Web("/home.html")
     public static String sayHello() {
