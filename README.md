@@ -44,9 +44,9 @@ Luego de haber ejecutado el comando ```mvn test``` en un Shell o Símbolo del Si
 ## Desplegar en Heroku
 Para desplegar el programa en Heroku, se debe realizar clic en el siguiente botón de Heroku para desplegar automáticamente la aplicación directamente desde Heroku. 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://areplab4.herokuapp.com/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://areplab4.herokuapp.com/home.html)
 
-* Para ir a la interfaz principal, poner el recurso ```/index.html``` al final de la URL de Heroku. 
+* Para ir a la interfaz principal, poner el recurso ```/home.html``` al final de la URL de Heroku. 
 * Para consultar toda la información relacionada con la Registraduría Nacional del Estado Civil, poner el recurso ```/Apps/acercade``` al final de la URL de Heroku.
 * Para visualizar el logo de la Registraduría Nacional del Estado Civil, poner el recurso ```/RegistraduriaNacionalDelEstadoCivil.png``` al final de la URL de Heroku.
 * Para consultar todas las bases de datos de todos los ciudadanos, poner el recurso ```/Apps/informationDB``` al final de la URL de Heroku.
