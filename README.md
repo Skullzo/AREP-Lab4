@@ -1,8 +1,7 @@
 # Taller de Arquitecturas de Servidores de Aplicaciones, Meta protocolos de objetos, Patrón IoC, Reflexión
 ## Descripción
-En el **Taller de Arquitecturas de Servidores de Aplicaciones, Meta protocolos de objetos, Patrón IoC, Reflexión** se realizarán diferentes retos en los que se explorarán los conceptos de esquemas de nombres y de clientes y servicios. Adicionalmente, el taller también explorará la arquitectura de las aplicaciones distribuidas sobre internet, para así ver el funcionamiento detallado de una aplicación web capaz de recibir múltiples solicitudes no concurrentes, creando un framework manualmente muy similar al funcionamiento de Spark que le permite publicar servicios web ```get``` y ```post``` para poder acceder a recursos estáticos como páginas web, javascripts, imágenes CSSs, entre otras cosas, desplegado usando un servidor web llamado Heroku para poder acceder a ella de manera totalmente remota. Para verificar el funcionamiento de cada uno de los requisitos, se realizó una simulación de la página de la Registraduría Nacional del Estado Civil, en la cual el usuario tiene una interfaz, y al digitar la URL en la que se encuentran las bases de datos, puede observar características como nombres y apellidos de ciudadanos junto con su dirección, cada una de ellas almacenada en una base de datos.
+En el **Taller de Arquitecturas de Servidores de Aplicaciones, Meta protocolos de objetos, Patrón IoC, Reflexión** se explorarán los conceptos de esquemas de nombres y de clientes y servicios. Adicionalmente, el taller también explorará la arquitectura de las aplicaciones distribuidas sobre internet, para así ver el funcionamiento detallado de una aplicación web capaz de recibir múltiples solicitudes no concurrentes, creando un framework IoC para la construcción de aplicaciones web a partir de POJOS permitiendo publicar servicios web ```get``` y ```post``` para poder acceder a recursos estáticos como páginas web, javascripts, imágenes CSSs, entre otras cosas, desplegado usando un servidor web llamado Heroku para poder acceder a ella de manera totalmente remota. Para verificar el funcionamiento de cada uno de los requisitos, se realizó una simulación de una página llamada **Fancy Wallpapers**, en la cual el usuario tiene una interfaz de usuario en la que tiene varios recursos, tales como poder visualizar varios fondos de pantalla, ver la interfaz final de usuario con un fondo de pantalla y mensaje de bienvenida, y ver un agradecimiento usando ```js``` con un mensaje de agradecimiento, y asimismo poder visualizar un fondo de pantalla en esa misma página.
 
-----------*Cambiar Descripción*----------
 ## Prerrequisitos
 Para la realización y ejecución tanto del programa como de las pruebas de este, se requieren ser instalados los siguientes programas:
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
@@ -46,12 +45,9 @@ Para desplegar el programa en Heroku, se debe realizar clic en el siguiente bot�
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://areplab4.herokuapp.com/home.html)
 
-* Para ir a la interfaz principal, poner el recurso ```/home.html``` al final de la URL de Heroku. 
-* Para consultar toda la información relacionada con la Registraduría Nacional del Estado Civil, poner el recurso ```/Apps/acercade``` al final de la URL de Heroku.
-* Para visualizar el logo de la Registraduría Nacional del Estado Civil, poner el recurso ```/RegistraduriaNacionalDelEstadoCivil.png``` al final de la URL de Heroku.
-* Para consultar todas las bases de datos de todos los ciudadanos, poner el recurso ```/Apps/informationDB``` al final de la URL de Heroku.
-
-----------*Cambiar Recursos*----------
+* Para ir a la interfaz principal, poner el recurso ```/home.html``` al final de la URL de Heroku.
+* Para visualizar un fondo de pantalla ofrecido por Fancy Wallpapers, poner el recurso ```/fondodepantalla.html``` al final de la URL de Heroku.
+* Para visualizar un agradecimiento por visitar la página web de Fancy Wallpapers, poner el recurso ```/agradecimiento.html``` al final de la URL de Heroku.
 
 ## Construido con
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
