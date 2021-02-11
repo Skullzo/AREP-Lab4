@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* edu.escuelaing.ioc.WebLauncher
+web: java $JAVA_OPTS -cp target/classes:target/dependency/* edu.escuelaing.ioc.App
