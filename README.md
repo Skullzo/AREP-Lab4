@@ -46,12 +46,9 @@ Para desplegar el programa en Heroku, se debe realizar clic en el siguiente bot�
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://areplab4.herokuapp.com/home.html)
 
-* Para ir a la interfaz principal, poner el recurso ```/home.html``` al final de la URL de Heroku. 
-* Para consultar toda la información relacionada con la Registraduría Nacional del Estado Civil, poner el recurso ```/Apps/acercade``` al final de la URL de Heroku.
-* Para visualizar el logo de la Registraduría Nacional del Estado Civil, poner el recurso ```/RegistraduriaNacionalDelEstadoCivil.png``` al final de la URL de Heroku.
-* Para consultar todas las bases de datos de todos los ciudadanos, poner el recurso ```/Apps/informationDB``` al final de la URL de Heroku.
-
-----------*Cambiar Recursos*----------
+* Para ir a la interfaz principal, poner el recurso ```/home.html``` al final de la URL de Heroku.
+* Para visualizar un fondo de pantalla ofrecido por Fancy Wallpapers, poner el recurso ```/fondodepantalla.html``` al final de la URL de Heroku.
+* Para visualizar un agradecimiento por visitar la página web de Fancy Wallpapers, poner el recurso ```/agradecimiento.html``` al final de la URL de Heroku.
 
 ## Construido con
 * [Maven](https://maven.apache.org/). Herramienta que se encarga de estandarizar la estructura física de los proyectos de software, maneja dependencias (librerías) automáticamente desde repositorios y administra el flujo de vida de construcción de un software.
