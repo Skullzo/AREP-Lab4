@@ -9,7 +9,9 @@ public class WebServiceJs {
      */
     @Web("/js.html")
     public static String returnHtmlWithJS(){
-        return "<html><head><script src=\"/hello.js\"></script></head><body><h1>JS!</h1></body></html>";
+        return "<html><head><script src=\"/agradecimiento.js\"></script></head>"
+        		+ "<body style = \"background: url(https://i.pinimg.com/originals/19/3e/cb/193ecbf389570118d51e658cfefc9746.jpg) no-repeat ; background-size: 100% 111%;\">\r\n"
+        		+ "</body>"
+        		+ "</html>";
     }
-
 }
