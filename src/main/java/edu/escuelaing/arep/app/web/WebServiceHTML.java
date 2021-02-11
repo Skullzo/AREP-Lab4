@@ -7,17 +7,17 @@ public class WebServiceHTML {
      *
      * @return html hello page
      */
-    @Web("/hello.html")
+    @Web("/home.html")
     public static String sayHello() {
         return "<html>"
         		+ "<head>"
         		+ "<title>Fancy Wallpapers</title>\r\n"
         		+ "</head>\r\n"
         		+ "<body>\r\n"
-        		+ "	<div style=\"padding:30px; width:96.9%; background:#008000; color:white; font-size:400%; position:absolute ; top:0px ; left:0px\">\r\n"
+        		+ "	<div style=\"padding:30px; width:96.9%; background:#000000; color:white; font-size:400%; position:absolute ; top:0px ; left:0px\">\r\n"
         		+ "	<center>Fancy Wallpapers</center>\r\n"
         		+ "	</div>\r\n"
-        		+ "	<div style=\"padding:30px; width:96.9%; background:#008000; color:white; font-size:150%; position:absolute ; top:120px ; left:0px\">\r\n"
+        		+ "	<div style=\"padding:30px; width:96.9%; background:#000000; color:white; font-size:150%; position:absolute ; top:120px ; left:0px\">\r\n"
         		+ "	<center>Los mejores fondos de pantalla para tu PC y/o smartphone.</center>\r\n"
         		+ "	</div>\r\n"
         		+ "	<br><br>\r\n"
