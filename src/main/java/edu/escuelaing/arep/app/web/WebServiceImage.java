@@ -9,6 +9,6 @@ public class WebServiceImage {
      */
     @Web("/image.html")
     public static String showImage() {
-        return "<html><body><img src=\"/Wallpaper.jpg\" width=\"1910\" height=\"950\"></body></html>";
+        return "<html><body><img src=\"/Wallpaper.jpg\" width=\"1920\" height=\"950\"></body></html>";
     }
 }
