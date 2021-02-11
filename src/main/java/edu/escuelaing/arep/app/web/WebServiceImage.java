@@ -7,7 +7,7 @@ public class WebServiceImage {
      *
      * @return html with image
      */
-    @Web("/image.html")
+    @Web("/fondodepantalla.html")
     public static String showImage() {
         return "<html><body><img src=\"/Wallpaper.jpg\" width=\"1900\" height=\"950\"></body></html>";
     }
