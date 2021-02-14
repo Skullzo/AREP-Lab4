@@ -1,4 +1,0 @@
-GitHub:
-https://github.com/Skullzo/AREP-Lab4
-Heroku:
-https://areplab4.herokuapp.com/home.html
